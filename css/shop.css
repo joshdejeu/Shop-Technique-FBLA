@@ -1,0 +1,491 @@
+header{
+  background: rgba(20,20,20,1);
+}
+header:hover{
+  background: rgba(20,20,20,1);
+}
+.page_top{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.header_space{
+  width: 100%;
+  height: 100px;
+}
+.item_selction{
+  width: 100%;
+  height: 10vh;
+  background: white;
+  display: grid;
+  grid-template-columns: 3fr 3fr 8fr 7fr 4fr;
+  position: fixed;
+  box-shadow: 0px 10px 20px 0px rgba(220,220,220,0.2);
+  z-index: 100;
+}
+.selection_label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  letter-spacing: -1px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.selection_options{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+#a{
+  cursor: grab;
+}
+#selectable{
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.5);
+  font-weight: bold;
+}
+#selectable:hover{
+  border-bottom: 3px solid rgba(255, 34, 18, 0.8);
+  color: rgba(255, 34, 18, 0.8);
+}
+.selection_options>div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop_container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 120vh 30vh 120vh 30vh 120vh 30vh 120vh 40vh;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+}
+#inner_grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5em;
+  margin-top: 10vh;
+}
+
+.category{
+  font-size: 1em;
+  font-family: 'Hurme', sans-serif;
+  color: rgba(0,0,0,0.5)
+}
+.product{
+  font-size: 1.5em;
+  font-family: 'Hurme', sans-serif;
+  text-transform: uppercase;
+}
+#instock_price{
+  color: rgb(0, 190, 30);
+}
+#outstock_price{
+  color: rgb(255, 0, 0);
+}
+.price{
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#product_picture{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.discount_sticker{
+  position: relative;
+  width: auto;
+  padding: 0px 10px;
+  height: 100%;
+  float: right;
+  border: 2px solid rgb(255, 122, 0);
+  color: white;
+  background: rgb(255, 122, 0);
+  font-family: 'Hurme', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.price_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.old_price{
+  text-decoration: line-through;
+  color: rgba(0,0,0,0.3);
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* phones */
+.phone_picture1{
+  background: url('../images/shop/iphone13.png');
+}
+.phone_picture2{
+  background: url('../images/shop/iphone13pro.png');
+}
+.phone_picture3{
+  background: url('../images/shop/iphone13promax.png');
+}
+.phone_picture4{
+  background: url('../images/shop/google5a.png');
+}
+.phone_picture5{
+  background: url('../images/shop/google6.png');
+}
+.phone_picture6{
+  background: url('../images/shop/shark.png');
+}
+.phone_picture7{
+  background: url('../images/shop/razer.png');
+}
+.phone_picture8{
+  background: url('../images/shop/rog.png');
+}
+/* laptops */
+.laptop_picture1{
+  background: url('../images/shop/dell.png');
+}
+.laptop_picture2{
+  background: url('../images/shop/acer.png');
+}
+.laptop_picture3{
+  background: url('../images/shop/msi.png');
+}
+.laptop_picture4{
+  background: url('../images/shop/intel.png');
+}
+.laptop_picture5{
+  background: url("../images/shop/acerlaptop.png");
+}
+.laptop_picture6{
+  background: url('../images/shop/mac.png');
+}
+.laptop_picture7{
+  background: url('../images/shop/omen.png');
+}
+.laptop_picture8{
+  background: url('../images/shop/razerblade.png');
+}
+/* Gaming PC */
+.pc_picture1{
+  background: url('../images/shop/msipc.png');
+}
+.pc_picture2{
+  background: url('../images/shop/nzxt.png');
+}
+.pc_picture3{
+  background: url('../images/shop/geforce.png');
+}
+.pc_picture4{
+  background: url('../images/shop/power.png');
+}
+.pc_picture5{
+  background: url('../images/shop/corsair.png');
+}
+.pc_picture6{
+  background: url('../images/shop/titan.png');
+}
+.pc_picture7{
+  background: url('../images/shop/avalanche.png');
+}
+.pc_picture8{
+  background: url('../images/shop/acerpc.png');
+}
+/* Components */
+.component_picture1{
+  background: url('../images/shop/ram.png');
+}
+.component_picture2{
+  background: url('../images/shop/ryzen.png');
+}
+.component_picture3{
+  background: url('../images/shop/aio.png');
+}
+.component_picture4{
+  background: url('../images/shop/gpro.png');
+}
+.component_picture5{
+  background: url('../images/shop/k95.png');
+}
+.component_picture6{
+  background: url('../images/shop/headset.png');
+}
+.component_picture7{
+  background: url('../images/shop/xboxcon.png');
+}
+.component_picture8{
+  background: url('../images/shop/3090.png');
+}
+
+.stock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: rgba(10, 173, 46,1);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.outofstock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: rgba(212, 6, 6,1);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+#inner_grid>div{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 30fr 3fr 3fr 8fr 3fr 8fr;
+  /*3fr 20fr 2fr 2fr 2fr 7fr 10fr*/
+  text-align: center;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  height: 60vh;
+  width: 100%;
+}
+
+.cart_button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart_button_add,.cart_button_buy{
+  font-family: 'Hurme',sans-serif;
+  border-radius: px;
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  transition: all 0.2s ease;
+  z-index: 99;
+}
+.cart_button_sold{
+  background: rgba(255, 0, 0, 0.3);
+  color: white;
+  transition: all 0.5s ease;
+  font-family: 'Hurme',sans-serif;
+  border-radius: px;
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  transition: all 0.2s ease;
+  z-index: 99;
+}
+.cart_button_sold:hover{
+  background: rgba(255, 0, 0, 0.2);
+  color: white;
+}
+.cart_button_add:hover, .cart_button_buy:hover{
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+}
+@keyframes cartShake {
+  0%{transform: scale(-1,1) scale(1.0) rotate(0deg);}
+  30%{transform: scale(-1,1) scale(1.2) rotate(-20deg);}
+  40%{transform: scale(-1,1) scale(1.2) rotate(0deg);}
+  50%{transform: scale(-1,1) scale(1.2) rotate(20deg);}
+  60%{transform: scale(-1,1) scale(1.2) rotate(0deg);}
+  70%{transform: scale(-1,1) scale(1.2) rotate(-20deg);}
+  80%{transform: scale(-1,1) scale(1.2) rotate(0deg);}
+  90%{transform: scale(-1,1) scale(1.2) rotate(20deg);}
+  100%{transform: scale(-1,1) scale(1.0) rotate(0deg);}
+}
+.cart_button_add:active{
+  box-shadow: 0px 0px 0px 0px white;
+  transform: scale(1.0);
+  transition: all 0.05s ease;
+  user-select: none;
+}
+.cart_fbutton_add:active{
+  background: rgb(0,0,0);
+  color: black;
+  text-shadow:
+-1px -1px 0 #fff,
+1px -1px 0 #fff,
+-1px 1px 0 #fff,
+1px 1px 0 #fff;
+  background: linear-gradient(135deg,
+     white 0px, white 10px, black 11px,
+     white 12px, white 20px, black 21px,
+     white 22px, white 30px, black 31px,
+     white 32px, white 40px, black 41px,
+     white 42px, white 50px, black 51px,
+     white 53px, white 60px, black 61px,
+     white 62px, white 70px, black 71px,
+     white 72px, white 80px, black 81px,
+     white 82px, white 90px, black 91px,
+     white 92px, white 100px, black 101px,
+     white 102px, white 110px, black 111px,
+     white 112px, white 120px, black 121px,
+     white 122px, white 130px, black 131px,
+     white 132px, white 140px, black 131px,
+     white 142px, white 150px, black 151px,
+     white 152px, white 160px, black 161px,
+     white 162px, white 170px, black 171px,
+     white 172px, white 180px, black 181px,
+     white 182px, white 190px, black 191px,
+     white 192px, white 200px, black 201px,
+     white 202px, white 210px, black 211px,
+     white 222px, white 220px, black 221px,
+     white 232px, white 230px, black 231px,
+     white 242px, white 240px, black 241px,
+     white 252px, white 250px, black 251px,
+     white 262px, white 260px, black 261px,
+     white 272px);
+}
+.cart_button_buy{
+  background: black;
+  color: white;
+}
+.cart_button_add{
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+#op10_container2{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 998;
+  visibility: hidden;
+}
+#op10_icon2{
+  z-index: 998;
+  filter: brightness(0%);
+  transition: all 0.5s ease;
+}
+#animationWorks{
+  z-index: 998;
+  filter: brightness(0%);
+  transition: all 0.5s ease;
+  animation: linear 0.5s cartShake forwards;
+}
+#op10_icon2:hover{
+  filter: brightness(0%) drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+}
+@media only screen and (max-width: 1800px){
+  #inner_grid{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .item_selction{
+    grid-template-columns: 3fr 3fr 5fr 10fr 4fr;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  #inner_grid{
+    grid-template-columns: repeat(2,1fr);
+    transform: scale(0.7);
+  }
+  .shop_container{
+    grid-template-rows: 220vh 10vh 220vh 10vh 220vh 10vh 220vh 20vh;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .item_selction{
+    grid-template-columns: 1fr 1fr 1fr 15fr 1fr;
+    top: 100px;
+  }
+  .selection_label{
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 1000px){
+  #inner_grid{
+    grid-template-columns: repeat(2,1fr);
+    transform: scale(1);
+  }
+  #inner_grid>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 22fr 3fr 3fr 3fr 1fr 8fr;
+    /*3fr 20fr 2fr 2fr 2fr 7fr 10fr*/
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    height: 40vh;
+    width: 100%;
+  }
+  .cart_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cart_button>div{
+    width: 60%;
+    height: 40%;
+    font-size: 1em;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .item_selction{
+    grid-template-columns: 0px 0px 2fr 10fr 3fr;
+    top: 0;
+    height: 120px;
+  }
+  .shop_container{
+    /* grid-template-rows: 480vh 100vh 480vh 100vh 480vh 100vh 480vh 120vh; */
+    grid-template-rows: 200vh 10vh 200vh 10vh 200vh 10vh 200vh 20vh;
+  }
+  .selection_label{
+    visibility: hidden;
+  }
+  #selectable{
+    color: black;
+  }
+  #op10_container2{
+    visibility: visible;
+  }
+  #cart_count2{
+    position: fixed;
+    top: 0.6in;
+    right: 0.3in;
+    z-index: 999;
+  }
+  #op10_icon2{
+    position: fixed;
+    top: 0.1in;
+    right: 0.5in;
+  }
+  #a{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+}

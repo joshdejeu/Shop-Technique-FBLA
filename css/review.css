@@ -1,0 +1,108 @@
+.page_body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(154deg, #ffaa00, #ff8200);
+}
+
+.progress_bar{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  z-index: 4;
+}
+.progress_text{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+#prog_text2,#prog_text1,#prog_text3{
+  color: black;
+}
+.circle_cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line,.line1{
+  height: 3px;
+  background: rgb(0,0,0);
+}
+.progress_circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 30px;
+}
+#prog_circ2,#prog_circ1,#prog_circ3{
+  background: black;
+  color: #ffaa00;
+}
+.check_out_banner{
+  background: #f4f4f4;
+}
+.shopping_cart_container{
+  width: 80vw;
+  height: 80vh;
+}
+.cart_total{
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.cart_container_text{
+  border-top-right-radius: 20px;
+}
+.confirmation_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #f4f4f4;
+  font-family: 'Montserrat';
+}
+.confirm_pic{
+  border: 5px solid black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 70px;
+}
+.confirm_label{
+  font-size: 5em;
+}
+.confirm_sublabel{
+  margin-top: 30px;
+  font-size: 2em;
+  line-height: 50px;
+  width: 60%;
+}
+.order_num{
+  font-size: 3em;
+  font-weight: bold;
+  color: #df7800;
+}
+@font-face { font-family: Midnight; src: url('../fonts/The_Star_in_the_Midnight.ttf'); }
+@font-face { font-family: Midnight2; font-weight: bold; src: url('../fonts/The_Star_in_the_Midnight.ttf');}
+.order_signature{
+  font-family: 'Midnight', sans-serif;
+  font-size: 90px;
+}
+@media only screen and (max-width: 1000px){
+  .progress_bar{
+    width: 80vw;
+  }
+}
