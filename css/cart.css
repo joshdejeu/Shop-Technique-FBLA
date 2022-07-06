@@ -1,0 +1,563 @@
+.header_space{
+  width: 100%;
+  height: 70px;
+}
+.page_body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(154deg, #ffaa00, #ff9900);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progress_bar{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  z-index: 4;
+}
+.progress_text{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+#prog_text1{
+  color: black;
+}
+#prog_text2,#prog_text3{
+  color: rgba(0,0,0,0.4);
+}
+.circle_cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  height: 3px;
+  background: rgba(0,0,0,0.4);
+}
+.progress_circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 30px;
+}
+#prog_circ1{
+  background: black;
+  color: #ffaa00;
+}
+#prog_circ2,#prog_circ3{
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.4);
+}
+#cart_container::-webkit-scrollbar-thumb,#cart_style_2::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,0.8);
+}
+#cart_container::-webkit-scrollbar-track,#cart_style_2::-webkit-scrollbar-track{
+  background: rgba(255,255,255,0.0);
+}
+#cart_container{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  padding: 20px;
+  height: 100%;
+}
+#cart_style_2{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Hurme';
+  font-size: 2em;
+  color: rgba(0,0,0,0.4);
+}
+.cart_label{
+  color: black;
+  font-size: 2em;
+  padding-left: 0.2in;
+  font-weight: 600;
+}
+.cart_remove{
+  color: red;
+  text-decoration: underline;
+  cursor: grab;
+}
+.back_to_shop{
+  cursor: grab;
+}
+.cart_total{
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  padding: 25px 0px 25px 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+  background: #f6f6f6;
+}
+.shopping_cart_container{
+  width: 55vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border-collapse: separate;
+  border-radius: 20px;
+}
+.cart_container_text{
+  border-top-left-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
+  background: #f6f6f6;
+  padding: 30px 20px 30px 20px;
+  z-index: 2;
+  box-shadow: 0px 10px 10px 0px rgba(200,200,200,0.3);
+}
+
+#product_item{
+  height: 120px;
+  border-bottom: 2px solid rgba(200,200,200,0.3);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+#product_item>div{
+  display: flex;
+  align-items: center;
+}
+.product_quantiy{
+  display: flex;
+  justify-content: space-around;
+}
+.quantity_num{
+  font-size: 2em;
+  font-family: 'Hurme', sans-serif;
+}
+.quantity_up,.quantity_down{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-family: 'Hurme', sans-serif;
+  cursor: grab;
+  transition: all 0.2s ease;
+  color: white;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.quantity_up:hover,.quantity_down:hover{
+  background: #ffaa00;
+}
+.product_price{
+  font-family: 'Hurme', sans-serif;
+  font-size: 1.4em;
+  margin-left: 35%;
+}
+.product_name{
+  font-family: 'Hurme', sans-serif;
+  font-size: 1.6em;
+}
+#product_image{
+  width: 150px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#op10_container2{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  visibility: hidden;
+  position: fixed;
+  z-index: 998;
+  top: 0.5in;
+  right: 0.5in;
+}
+#op10_icon2{
+  z-index: 9999;
+  filter: brightness(100%);
+}
+.iPhone13_image{
+  background: url("../images/shop/iphone13.png");
+}
+.iPhone13Pro_image{
+  background: url("../images/shop/iphone13pro.png");
+}
+.iPhone13ProMax_image{
+  background: url("../images/shop/iphone13promax.png");
+}
+.Pixel5_image{
+  background: url("../images/shop/google5a.png");
+}
+.Pixel6_image{
+  background: url("../images/shop/google6.png");
+}
+.blackshark_image{
+  background: url("../images/shop/shark.png");
+}
+.razerphone_image{
+  background: url('../images/shop/razer.png');
+}
+.rog5_image{
+  background: url("../images/shop/rog.png");
+}
+
+
+
+/* Laptops */
+.xps_image{
+  background: url('../images/shop/dell.png');
+}
+.nitro5_image{
+  background: url('../images/shop/acer.png');
+}
+.ge76_image{
+  background: url('../images/shop/msi.png');
+}
+.ideapad3_image{
+  background: url('../images/shop/intel.png');
+}
+.acer_image{
+  background: url("../images/shop/acerlaptop.png");
+}
+.macbook_image{
+  background: url('../images/shop/mac.png');
+}
+.omen_image{
+  background: url('../images/shop/omen.png');
+}
+.x5_image{
+  background: url('../images/shop/razerblade.png');
+}
+
+
+/* PCs */
+.msipc_image{
+  background: url('../images/shop/msipc.png');
+}
+.nzxtpc_image{
+  background: url("../images/shop/nzxt.png");
+}
+.geforcepc_image{
+  background: url("../images/shop/geforce.png");
+}
+.ibuypowerpc_image{
+  background: url("../images/shop/power.png");
+}
+.corsairpc_image{
+  background: url("../images/shop/corsair.png");
+}
+.titanpc_image{
+  background: url("../images/shop/titan.png");
+}
+.avalanchepc_image{
+  background: url("../images/shop/avalanche.png");
+}
+.acerpc_image{
+  background: url("../images/shop/acerpc.png");
+}
+
+
+/* Components */
+.ram_image{
+  background: url("../images/shop/ram.png");
+}
+.cpu_image{
+  background: url("../images/shop/ryzen.png");
+}
+.pump_image{
+  background: url("../images/shop/aio.png");
+}
+.mouse_image{
+  background: url("../images/shop/gpro.png");
+}
+.keyboard_image{
+  background: url("../images/shop/k95.png");
+}
+.headset_image{
+  background: url("../images/shop/headset.png");
+}
+.controller_image{
+  background: url("../images/shop/xboxcon.png");
+}
+.gpu_image{
+  background: url("../images/shop/3090.png");
+}
+
+.all_container{
+  display: flex;
+  box-shadow: 0px 0px 20px 0px rgba(30,30,30,0.2);
+  border-radius: 20px;
+}
+.items_left{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.check_out_banner{
+  width: 25vw;
+  height: 80vh;
+  background: rgba(255, 210, 122, 1);
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 3fr 3fr 1fr 3fr 3fr;
+  grid-template-columns: 1fr;
+  font-family: 'Hurme';
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.checkout_link{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.check_button_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout_button:hover{
+  background: #464646;
+}
+.checkout_button{
+  width: calc(65% + 70px);
+  height: 45px;
+  border: none;
+  background: #000000;
+  color: white;
+  font-size: 0.9em;
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+.input_container{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Montserrat';
+}
+.checkout_input2::placeholder{
+  color: rgba(0,0,0,0.4);
+}
+.label_container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.input_label{
+  width: calc(65% + 70px);
+  font-size: 1.3em;
+}
+.select_container{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#promodiscount{
+  visibility: hidden;
+}
+option:checked {
+  background:rgba(255, 191, 0, 0.5);
+}
+.checkout_input{
+  width: calc(65% + 50px);
+  height: 30px;
+  border: none;
+  background: #f9f9f9;
+  padding: 5px 0px 5px 20px;
+  color: rgba(0,0,0,0.6);
+  font-size: 1.2em;
+  font-family: 'Montserrat';
+  border-radius: 0px;
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  box-sizing:content-box;
+}
+.input2_end{
+  width: 15%;
+  height: 40px;
+  color: rgba(0,0,0,0.6);
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  cursor: grab;
+  font-size: 1.3em;
+}
+.arrow_container{
+  width: 10%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  cursor: grab;
+}
+.arrow_right{
+  border: solid rgba(0,0,0,0.5);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.total_label{
+  font-weight: 600;
+  font-family: 'Montserrat';
+}
+.checkout_input2{
+  letter-spacing: 1px;
+  width: 55%;
+  height: 30px;
+  border: none;
+  background: #f9f9f9;
+  padding: 5px 50px 5px 20px;
+  font-size: 1.2em;
+  font-family: 'Montserrat';
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  box-sizing:content-box;
+}
+.checkout_input:focus, .checkout_input2:focus{
+    outline: none;
+}
+.all_prices{
+  width: calc(65% + 70px);
+  height: 70%;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: rgba(0,0,0,0.35);
+}
+.total_container_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.3em;
+}
+.total_container{
+  width: calc(65% + 70px);
+  box-shadow: 0px -15px 0px 0px rgb(255,210,122), 0px -17px 0px 0px rgba(30,30,30,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+#total_price{
+  font-family: 'Montserrat';
+}
+.check_out_label{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.summary_container{
+  width: calc(65% + 70px);
+  font-size: 2em;
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 0px 0px rgb(255,210,122), 0px 2px 0px 0px rgba(30,30,30,0.2);
+}
+.check_out_items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.total_item_container{
+  width: calc(65% + 70px);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  font-size: 1.3em;
+  font-family: 'Montserrat';
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+  .all_container{
+    display: grid;
+    grid-template-rows: 100vh 50vh;
+    display: flex;
+
+    grid-template-rows: 1fr;
+    flex-direction: column;
+    width: 80vw;
+    height: 70vh;
+  }
+  .shopping_cart_container{
+    width: 100%;
+    height: 45vh;
+  }
+  .cart_container_text{
+    border-top-right-radius: 20px;
+
+  }
+  .progress_bar{
+    width: 80vw;
+  }
+  .check_out_banner{
+    width: 100%;
+    height: 25vh;
+    border-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .cart_total{
+    border-radius: 0px;
+  }
+  .check_button_container{
+    margin-top: -10px;
+  }
+  .checkout_button{
+    font-size: 1.5em;
+  }
+}

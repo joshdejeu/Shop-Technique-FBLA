@@ -1,0 +1,168 @@
+.page_body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(154deg, #ffaa00, #ff8200);
+}
+
+.progress_bar{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  z-index: 4;
+}
+.progress_text{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+#prog_text2,#prog_text1{
+  color: black;
+}
+#prog_text3{
+  color: rgba(0,0,0,0.4);
+}
+.circle_cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  height: 3px;
+  background: rgba(0,0,0,0.4);
+}
+.line1{
+  height: 3px;
+  background: rgb(0,0,0);
+}
+.progress_circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 30px;
+}
+#prog_circ2,#prog_circ1{
+  background: black;
+  color: #ffaa00;
+}
+#prog_circ3{
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.4);
+}
+#payment_container{
+  background: #f4f4f4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70vh;
+}
+.shopping_cart_container{
+  width: 80vw;
+  height: 80vh;
+  background-color: #f6f6f6;
+}
+.cart_total{
+  border-bottom-right-radius: 20px;
+}
+.cart_container_text{
+  border-top-right-radius: 20px;
+}
+.payment_right{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0fr 1fr 1fr 1fr 2fr 1fr;
+  grid-gap: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.input_contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+.input_contain2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 60%;
+  grid-column-gap: 10px;
+}
+.card_label{
+  font-family: 'Montserrat';
+  font-size: 20px;
+  width: 100%;
+}
+.card_input{
+  height: 40px;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  width: calc(100% - 40px);
+  background: rgba(50,50,50,0.1);
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgba(0,0,0,0.5);
+}
+.checkout_button{
+  width: 100%;
+  z-index: 500;
+}
+.payment_left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.credit_picture{
+  background: url("../images/creditcard.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 80%;
+}
+.btn_container{
+  width: 100%;
+}
+
+@media only screen and (max-width: 1700px){
+  #payment_container{
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .progress_bar{
+    width: 80vw;
+  }
+  #payment_container{
+    grid-template-columns: 0fr 1fr;
+  }
+  .payment_right{
+    height: 100%;
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr;
+  }
+  .input_contain{
+    width: 100%;
+  }
+  .input_contain2{
+    width: 100%;
+  }
+  .card_input{
+    height: 5vh;
+  }
+  .card_label{
+    font-size: 1.5vh;
+  }
+  .checkout_button{
+    height: 4vh;
+    font-size: 1.7vh;
+  }
+}

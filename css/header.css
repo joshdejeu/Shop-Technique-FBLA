@@ -1,0 +1,188 @@
+*{
+  margin: 0px;
+}
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*height: 100%; NOTE: when height is defined, window.scrollY is always 0, no header change*/
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+header{
+  background: rgba(255,255,255,0);
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+  transition: all ease 0.3s;
+}
+header:hover{
+  background: white;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: inherit;
+}
+a:link{
+  color: inherit;
+}
+#op10_icon, #op10_icon2{
+  animation: linear cartShake 0.5s forwards;
+}
+@keyframes cartShake {
+  0%{transform: scale(-1,1) scale(1.0) rotate(0deg);}
+  30%{transform: scale(-1,1) scale(1.2) rotate(-20deg);}
+  40%{transform: scale(-1,1) scale(1.2) rotate(0deg);}
+  50%{transform: scale(-1,1) scale(1.2) rotate(20deg);}
+  60%{transform: scale(-1,1) scale(1.2) rotate(0deg);}
+  70%{transform: scale(-1,1) scale(1.2) rotate(-20deg);}
+  80%{transform: scale(-1,1) scale(1.2) rotate(0deg);}
+  90%{transform: scale(-1,1) scale(1.2) rotate(20deg);}
+  100%{transform: scale(-1,1) scale(1.0) rotate(0deg);}
+}
+@font-face { font-family: Midnight; src: url('../fonts/The_Star_in_the_Midnight.ttf'); }
+@font-face { font-family: Midnight2; font-weight: bold; src: url('../fonts/The_Star_in_the_Midnight.ttf');}
+
+
+@font-face { font-family: Hurme; src: url('../fonts/HurmeGeometricSans1.otf'); }
+@font-face { font-family: Hurme; font-weight: bold; src: url('../fonts/HurmeGeometricSans1.otf');}
+
+@font-face { font-family: Montserrat; src: url('../fonts/Montserrat-Medium.ttf'); }
+.header_contianer{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr repeat(11, 3fr) 1fr;
+  grid-template-rows: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+
+.option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Hurme', sans-serif;
+  font-size: calc(0.4vw + 7px);
+  text-decoration: underline;
+  position: relative;
+}
+
+.op{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  font-family: 'Midnight';
+  font-size: calc(5vw + 17px);
+  z-index: 3;
+  margin-top: 0.7vw;
+  color: white;
+}
+.language{
+  display: flex;
+}
+.usaflag{
+  background: url('../images/usaflag.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 3vw;
+  height: calc(3vw * 0.56);
+  cursor: grab;
+  opacity: 100%;
+}
+.line_parent{
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line_child{
+  width: 2px;
+  height: 80%;
+  background: rgba(255,255,255,0.7);
+}
+.mexflag{
+  background: url('../images/mexflag.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 3vw;
+  height: calc(3vw * 0.56);
+  cursor: grab;
+  opacity: 30%;
+}
+.clickable_option{
+  cursor: grab;
+}
+#op9{
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+#op10_icon{
+  filter: brightness(100%);
+  cursor: grab;
+}
+#cart_count,#cart_count2{
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Hurme',sans-serif;
+  font-size: 0.8em;
+  position: absolute;
+  margin-top: -43px;
+  margin-left: 26px;
+}
+.cart_icon{
+  -wekkit-transform: scale(-1,1);
+  -moz-transform: scale(-1,1);
+  transform: scale(-1,1);
+  background: url('../images/cart.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+#op10_container{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 1000px){
+  header{
+    visibility: hidden;
+  }
+  .cart_icon{
+    width: 10vw;
+    height: 10vw;
+  }
+  #cart_count,#cart_count2{
+    width: 4vw;
+    height: 4vw;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hurme',sans-serif;
+    font-size: 1.4em;
+    position: absolute;
+    top: 0.4in;
+    right: -0.1in;
+  }
+}
