@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="../css/header.css">
+      <link rel="stylesheet" href="../css/scrollbar.css">
+      <link rel="stylesheet" href="../css/loadingscreen.css">
+      <link rel="stylesheet" href="../css/footer.css">
+      <link rel="stylesheet" href="../css/slidebanner.css">
+      <link rel="icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../css/shop.css">
+      <link rel="stylesheet" href="../css/bot.css">
+      <meta charset="utf-8">
+      <title>Technique | Shop</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="loading">
+         <div class="loading_icon"></div>
+      </div>
+      <div class="content">
+         <div id="banner1" onclick="slideBanner()">
+           <div class="box">
+             <div class="boxin"></div>
+             <div class="boxin"></div>
+             <div class="boxin"></div>
+           </div>
+         </div>
+         <div id="banner2" class="slidebanner">
+            <div class=""></div>
+            <div class="banner_exit">
+               <div class="exit" onclick="slideExit()">&#10060;</div>
+            </div>
+            <div class="banner_options">
+               <div id="banop" class=""><a id="redir" href="../html/shop.html">Shop</a></div>
+               <div class="banner_line">
+                  <div id="slide_flag" class="usaflag2" onClick="translateEnglish(),eng()"></div>
+                  <div id="slide_flag" class="mexflag2" onClick="translateSpanish(),span()"></div>
+               </div>
+               <div id="banop" class=""><a id="redir" href="../html/location.html">Locations</a></div>
+               <div class="banner_line"></div>
+               <div id="banop" class=""><a id="redir" href="../html/aboutus.html">About Us</a></div>
+               <div class="banner_line"></div>
+               <div id="banop" class=""><a id="redir" href="../html/documentation.html">Documentation</a></div>
+               <div class="banner_line"></div>
+               <div class="div2">
+                  <div id="rightline" class="textdiv2"><a id="redirr" href="../index.html">Home Page</a></div>
+                  <div class="textdiv2"><a id="redirr" onclick="goToContact()">Contact Us</a></div>
+               </div>
+            </div>
+         </div>
+         <header id="header" class="header" >
+            <div class="header_contianer">
+               <div class="filler"></div>
+               <div class="option">
+                  <a id="a" href="../html/documentation.html">
+                     <p id="op7"  class="clickable_option">DOCUMENTATION</p>
+                  </a>
+               </div>
+               <div class="option">
+                  <a id="a" href="../html/shop.html">
+                     <p id="op1"  class="clickable_option">SHOP</p>
+                  </a>
+               </div>
+               <div class="option">
+                  <a id="a" href="../html/location.html">
+                     <p id="op2" class="clickable_option">LOCATIONS</p>
+                  </a>
+               </div>
+               <div class="option">
+                  <a id="a" href="../html/aboutus.html">
+                     <p id="op3"  class="clickable_option">ABOUT US</p>
+                  </a>
+               </div>
+               <div id="op4" class="option"></div>
+               <div id="op5" class="op" >
+                  <a href="../index.html">
+                     <p class="logo">technique</p>
+                  </a>
+               </div>
+               <div id="op6" class="option"></div>
+               <div class="option">
+                  <p id="op8" class="clickable_option" onClick="goToContact()">CONTACT US</p>
+               </div>
+               <div id="op9" class="option">
+                  <div class="language">
+                     <div id="usaflag" class="usaflag" onClick="translateEnglish(),eng()"></div>
+                     <div class="line_parent">
+                        <div id="line" class="line_child"></div>
+                     </div>
+                     <div id="mexflag" class="mexflag" onClick="translateSpanish(),span()"></div>
+                  </div>
+               </div>
+               <div id="op10_container">
+                  <a id="cart_link" href="cart.html">
+                     <div id="op10_icon" class="cart_icon"></div>
+                     <div id="cart_count">0</div>
+                  </a>
+               </div>
+               <div class="filler"></div>
+            </div>
+         </header>
+         <div class="page_top">
+            <div class="header_space"></div>
+            <div class="item_selction">
+               <div class="filler"></div>
+               <div class="selection_label">NEW PRODUCTS</div>
+               <div class="filler"></div>
+               <div class="selection_options">
+                  <div class="selection_option1">
+                     <a id="a" onClick="document.getElementById('filler').scrollIntoView();">
+                        <p id="selectable">Phones</p>
+                     </a>
+                  </div>
+                  <div class="selection_option2">
+                     <a id="a" onClick="document.getElementById('laptop').scrollIntoView();">
+                        <p id="selectable">Laptops</p>
+                     </a>
+                  </div>
+                  <div class="selection_option3">
+                     <a id="a" onClick="document.getElementById('pc').scrollIntoView();">
+                        <p id="selectable">Gaming PCs</p>
+                     </a>
+                  </div>
+                  <div class="selection_option4">
+                     <a id="a" onClick="document.getElementById('component').scrollIntoView();">
+                        <p id="selectable">Components</p>
+                     </a>
+                  </div>
+               </div>
+               <div id="op10_container2">
+                  <a id="cart_link" href="cart.html">
+                     <div id="op10_icon2" class="cart_icon"></div>
+                     <div id="cart_count2">0</div>
+                  </a>f
+               </div>
+            </div>
+            <div class="container">
+               <div class="container_side_filler"></div>
+               <div class="shop_container">
+                  <div id="inner_grid">
+                     <div id="phone" class="phone">
+                        <!-- <div class="phone"> -->
+                        <div class="discount">
+                           <div class="discount_sticker">
+                              10% off
+                           </div>
+                        </div>
+                        <div id="product_picture" class="phone_picture1"></div>
+                        <p class="category">NEW</p>
+                        <p class="product">iPhone 13</p>
+                        <div class="price_container">
+                           <div class="filler"></div>
+                           <p id="instock_price" class="price">$719.99</p>
+                           <p class="old_price">$779.99</p>
+                           <div class="filler"></div>
+                        </div>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                            <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_iPhone13" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="phone">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="phone_picture2"></div>
+                        <p class="category">NEW</p>
+                        <p class="product">iPhone 13 Pro</p>
+                        <p id="instock_price" class="price">$999.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_iPhone13Pro" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="phone">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="phone_picture3"></div>
+                        <p class="category">NEW</p>
+                        <p class="product">iPhone 13 Pro Max</p>
+                        <p id="outstock_price" class="price">$1,099.99</p>
+                        <div class="outofstock">
+                           OUT OF STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_sold">SOLD OUT</div>
+                           <div id="product_iPhone13ProMax" class="cart_button_sold">SOLD OUT</div>
+                        </div>
+                     </div>
+                     <div class="phone">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="phone_picture4"></div>
+                        <p class="category">REFURBISHED</p>
+                        <p class="product">Google Pixel 5a</p>
+                        <p id="instock_price" class="price">$449.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_GooglePixel5a" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="phone">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="phone_picture5"></div>
+                        <p class="category">REFURBISHED</p>
+                        <p class="product">Google Pixel 6</p>
+                        <p id="instock_price" class="price">$699.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_GooglePixel6" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="phone">
+                        <div class="discount">
+                           <div class="discount_sticker">
+                              5% off
+                           </div>
+                        </div>
+                        <div id="product_picture" class="phone_picture6"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">Black Shark 3</p>
+                        <div class="price_container">
+                           <div class="filler"></div>
+                           <p id="instock_price" class="price">$536.74</p>
+                           <p class="old_price">$564.99</p>
+                           <div class="filler"></div>
+                        </div>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_BlackShark3" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="phone">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="phone_picture7"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">Razer Phone 2</p>
+                        <p id="instock_price" class="price">$799.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_RazerPhone2" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="phone">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="phone_picture8"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">Asus ROG 5</p>
+                        <p id="outstock_price" class="price">$999.99</p>
+                        <div class="outofstock">
+                           OUT OF STOCK
+                        </div>
+                        <div class="cart_button">
+                          <div class="cart_button_sold">SOLD OUT</div>
+                           <div id="product_AsusROG5" class="cart_button_sold">SOLD OUT</div>
+                        </div>
+                     </div>
+                  </div><!-- end of phone container inner-grid -->
+                  <div class="filler_gap"></div>
+                  <div id="inner_grid" class="laptop">
+                     <div id="laptop" class="laptop">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="laptop_picture1"></div>
+                        <p class="category">NEW</p>
+                        <p class="product">Dell XPS 13</p>
+                        <p id="outstock_price" class="price">$899.99</p>
+                        <div class="outofstock">
+                           OUT OF STOCK
+                        </div>
+                        <div class="cart_button">
+                          <div class="cart_button_sold">SOLD OUT</div>
+                           <div id="product_DellXPS13" class="cart_button_sold">SOLD OUT</div>
+                        </div>
+                     </div>
+                     <div class="laptop">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="laptop_picture2"></div>
+                        <p class="category">REFURBISHED</p>
+                        <p class="product">Acer Nitro 5</p>
+                        <p id="instock_price" class="price">$1,199.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_AcerNitro5" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="laptop">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="laptop_picture3"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">MSI Raider Ge76</p>
+                        <p id="instock_price" class="price">$1,999.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_MSIRaiderGe76" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="laptop">
+                        <div class="discount">
+                           <div class="discount_sticker">
+                              20% off
+                           </div>
+                        </div>
+                        <div id="product_picture" class="laptop_picture4"></div>
+                        <p class="category">NEW</p>
+                        <p class="product">Lenovo Ideapad 3</p>
+                        <div class="price_container">
+                           <div class="filler"></div>
+                           <p id="instock_price" class="price">$779.99</p>
+                           <p class="old_price">$827.99</p>
+                        </div>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_LenovoIdeapad3" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="laptop">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="laptop_picture5"></div>
+                        <p class="category">REFURBISHED</p>
+                        <p class="product">ACER</p>
+                        <p id="instock_price" class="price">$599.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_ACER" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="laptop">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="laptop_picture6"></div>
+                        <p class="category">REFURBISHED</p>
+                        <p class="product">MacBook Air</p>
+                        <p id="instock_price" class="price">$899.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_MacBookAir" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="laptop">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="laptop_picture7"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">OMEN</p>
+                        <p id="instock_price" class="price">$1,049.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_OMEN" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="laptop">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="laptop_picture8"></div>
+                        <p class="category">NEW</p>
+                        <p class="product">MSI X5</p>
+                        <p id="instock_price" class="price">$2,899.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_MSIX5" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                  </div><!-- end of laptop container inner-grid -->
+                  <div class="filler_gap"></div>
+                  <div id="inner_grid" class="pc">
+                     <div id="pc" class="pc">
+                        <div class="discount">
+                           <div class="discount_sticker">
+                              10% off
+                           </div>
+                        </div>
+                        <div id="product_picture" class="pc_picture1"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">MSI PC</p>
+                        <div class="price_container">
+                           <div class="filler"></div>
+                           <p id="instock_price" class="price">$2069.99</p>
+                           <p class="old_price">$2,299.99</p>
+                        </div>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_MSIPC" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="pc">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="pc_picture2"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">NZXT PC</p>
+                        <p id="instock_price" class="price">$3,199.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_NZXTPC" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="pc">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="pc_picture3"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">GEFORCE PC</p>
+                        <p id="outstock_price" class="price">$4,999.99</p>
+                        <div class="outofstock">
+                           OUT OF STOCK
+                        </div>
+                        <div class="cart_button">
+                          <div class="cart_button_sold">SOLD OUT</div>
+                           <div id="product_GEFORCEPC" class="cart_button_sold">SOLD OUT</div>
+                        </div>
+                     </div>
+                     <div class="pc">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="pc_picture4"></div>
+                        <p class="category">NEW</p>
+                        <p class="product">IBUYPOWER PC</p>
+                        <p id="instock_price" class="price">$999.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_IBUYPOWERPC" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="pc">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="pc_picture5"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">CORSAIR PC</p>
+                        <p id="instock_price" class="price">$4,599.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_CORSAIRPC" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="pc">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="pc_picture6"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">TITAN PC</p>
+                        <p id="instock_price" class="price">$3,499.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_TITANPC" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="pc">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="pc_picture7"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">AVALANCHE PC</p>
+                        <p id="instock_price" class="price">$2,299.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_AVALANCHEPC" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="pc">
+                        <div class="discount">
+                           <div class="discount_sticker">
+                              10% off
+                           </div>
+                        </div>
+                        <div id="product_picture" class="pc_picture8"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">ACER PC</p>
+                        <div class="price_container">
+                           <div class="filler"></div>
+                           <p id="outstock_price" class="price">$2,699.99</p>
+                           <p class="old_price">$2,999.99</p>
+                        </div>
+                        <div class="outofstock">
+                           OUT OF STOCK
+                        </div>
+                        <div class="cart_button">
+                          <div class="cart_button_sold">SOLD OUT</div>
+                           <div id="product_ACERPC" class="cart_button_sold">SOLD OUT</div>
+                        </div>
+                     </div>
+                  </div><!-- end of pc container inner-grid -->
+                  <div class="filler_gap"></div>
+                  <div id="inner_grid" class="component">
+                     <div id="component" class="pc">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="component_picture1"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">TRIDENT Z NEO RAM</p>
+                        <p id="instock_price" class="price">$209.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_TRIDENTZNEORAM" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="component">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="component_picture2"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">RYZEN 5 5600X</p>
+                        <p id="instock_price" class="price">$409.00</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_RYZEN55600X" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="component">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="component_picture3"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">AIO PUMP</p>
+                        <p id="outstock_price" class="price">$129.99</p>
+                        <div class="outofstock">
+                           OUT OF STOCK
+                        </div>
+                        <div class="cart_button">
+                          <div class="cart_button_sold">SOLD OUT</div>
+                           <div id="product_AIOPUMP" class="cart_button_sold">SOLD OUT</div>
+                        </div>
+                     </div>
+                     <div class="component">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="component_picture4"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">Logitc G Pro Wireless</p>
+                        <p id="instock_price" class="price">$119.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_MOUSE" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="component">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="component_picture5"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">Corsair K95 Keyboard</p>
+                        <p id="instock_price" class="price">$129.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_RGBKEYBOARD" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="component">
+                        <div class="discount">
+                           <div class="discount_sticker">
+                              5% off
+                           </div>
+                        </div>
+                        <div id="product_picture" class="component_picture6"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">Razer Nari Headset</p>
+                        <div class="price_container">
+                          <div class="filler"></div>
+                          <p id="instock_price" class="price">$94.99</p>
+                          <p class="old_price">$99.99</p>
+                          <div class="filler"></div>
+                        </div>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_HEADSET" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="component">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="component_picture7"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">XBOX Series X Controller</p>
+                        <p id="instock_price" class="price">$49.99</p>
+                        <div class="stock">
+                           IN STOCK
+                        </div>
+                        <div class="cart_button">
+                           <div class="cart_button_buy" onclick="buyNow(this)">BUY NOW</div>
+                           <div id="product_CONTROLLER" class="cart_button_add" onclick="plusOne(this)">ADD TO CART</div>
+                        </div>
+                     </div>
+                     <div class="component">
+                        <div class="filler"></div>
+                        <div id="product_picture" class="component_picture8"></div>
+                        <p class="category">GAMING</p>
+                        <p class="product">3090 GPU</p>
+                        <p id="outstock_price" class="price">$4,999.99</p>
+                        <div class="outofstock">
+                           OUT OF STOCK
+                        </div>
+                        <div class="cart_button">
+                          <div class="cart_button_sold">SOLD OUT</div>
+                           <div id="product_3090" class="cart_button_sold">SOLD OUT</div>
+                        </div>
+                     </div>
+                  </div><!-- end of component container inner-grid -->
+                  <div class="filler"></div>
+               </div><!-- end of shop container -->
+               <div class="container_side_filler"></div>
+            </div><!-- end of container container -->
+
+            <div id="bot_mobileView"></div>
+            <div id="bot_container">
+               <div id="bot_header">
+                   <div id="bot_header_profile">
+                       <div id="bot_status"></div>
+                   </div>
+                   <div id="bot_header_name">
+                       <div id="bot_name">TechBot</div>
+                       <div id="bot_online">Online</div>
+                   </div>
+                   <div id="bot_exit">
+                       <div id="bot_exit_btn">✕</div>
+                   </div>
+               </div>
+               <div id="bot_body">
+                   <div id="message_bot">
+                       <div id="bot_reply_profile"></div>
+                       <div id="bot_reply_message">Type <i>'help'</i> for more options.</div>
+                   </div>
+                   <div id="message_bot">
+                       <div id="bot_reply_profile"></div>
+                       <div id="bot_reply_message">What can I help you with today?</div>
+                   </div>
+                   <div id="message_tip">
+                       <h4 id="h4_tip">Common Questions</h4>
+                       <div class="tip">Where are you located?</div>
+                       <div class="tip">More about Technique?</div>
+                       <div class="tip">Where is your shop?</div>
+                   </div>
+               </div>
+               <div id="bot_input">
+                   <input type="text" id="bot_textinput" placeholder="Type your message here..." value="">
+                   <div id="bot_send">
+                       <div id="send_icon"></div>
+                   </div>
+               </div>
+           </div> <!-- End of Bot -->
+           <script src="../javascript/bot.js"></script>
+
+            <footer>
+               <div id="social_media" class="grid_span1">
+                  <div id="footerText1" class="social_media_text">Stay connected with us on social media!</div>
+                  <a id="social_icons" class="facebook" href="https://www.facebook.com/Technique-Inc-104527218790916" target="_blank"></a>
+                  <a id="social_icons" class="instagram" href="https://www.instagram.com/technique_inc/" target="_blank"></a>
+                  <a id="social_icons" class="twitter" href="https://twitter.com/IncTechnique" target="_blank"></a>
+                  <a id="social_icons" class="youtube" href="https://www.youtube.com/channel/UCJYK2iQPfQrv5PLX34L6zlQ" target="_blank"></a>
+               </div>
+               <div class="filler"></div>
+               <div id="footer_inner_grid" class="footer_section1">
+                  <div class="filler"></div>
+                  <div id="footerText2" class="footer_section_name">EXPLORE</div>
+                  <div class="filler"></div>
+                  <div class="footer_line"></div>
+                  <div class="filler"></div>
+                  <div class="footer_section_content">
+                     <a id="footerOption1" href="../html/location.html">Our Locations</a>
+                     <a id="footerOption2" href="../html/aboutus.html">About Us</a>
+                     <a id="footerOption3" href="../html/shop.html">Our Shop</a>
+                  </div>
+               </div>
+               <div id="footer_inner_grid" class="footer_section2">
+                  <div class="filler"></div>
+                  <div id="footerText3" class="footer_section_name">LINKS</div>
+                  <div class="filler"></div>
+                  <div class="footer_line"></div>
+                  <div class="filler"></div>
+                  <div class="footer_section_content">
+                     <a id="footerOption4" href="../html/documentation.html">Documentation</a>
+                     <a id="footerOption5" href="../index.html">Home Page</a>
+                     <a id="footerOption6" href="../html/shop.html">Inventory</a>
+                  </div>
+               </div>
+               <div id="footer_inner_grid" class="footer_section3">
+                  <div class="filler"></div>
+                  <div id="footerText4" class="footer_section_name">CONTACT</div>
+                  <div class="filler"></div>
+                  <div class="footer_line"></div>
+                  <div class="filler"></div>
+                  <div id="footer_contact_grid" class="footer_section_content">
+                     <div id="footer_contact_icon_container">
+                        <img id="footer_contact_icons" src="../images/pinicon.png" alt="">
+                     </div>
+                     <a id="footerOption7" href="../html/location.html">Springfield, MO, 65807, US</a>
+                     <div id="footer_contact_icon_container">
+                        <img id="footer_contact_icons" src="../images/mailicon.png" alt="">
+                     </div>
+                     <a id="footerOption8" onclick="sendEmail()" href="#">techniqueincorporated@gmail.com</a>
+                     <script>
+                        function sendEmail()
+                        {
+                          window.location = "mailto:techniqueincorporated@gmail.com";
+                        }
+                     </script>
+                     <div id="footer_contact_icon_container">
+                        <img id="footer_contact_icons" src="../images/phoneicon.png" alt="">
+                     </div>
+                     <a id="footerOption9" href="#">+1-800-123-4567</a>
+                  </div>
+               </div>
+               <div class="filler"></div>
+               <div class="grid_span2">&copy 2022 Copyright Josh Dejeu</div>
+            </footer>
+         </div><!-- end of container of body and footer -->
+      </div><!-- end of content -->
+      <script src="../javascript/slidebanner.js"></script>
+      <script src="../javascript/shopcookie.js"></script>
+      <script src="../javascript/cookies.js"></script>
+      <script src="../javascript/mobileContact.js"></script>
+      <script src="../javascript/translateShop.js"></script>
+      <script src="../javascript/updateCart.js"></script>
+      <script src="../javascript/cart.js"></script>
+      <script src="../javascript/languageSelected.js"></script>
+      <script src="../javascript/checkout.js"></script>
+   </body>
+</html>
