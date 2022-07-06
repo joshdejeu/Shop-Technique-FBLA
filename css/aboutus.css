@@ -1,0 +1,67 @@
+.page_space{
+  width: 100%;
+  height: 100px;
+  background: rgb(70,70,70);
+}
+.page_bod{
+  position: relative;
+  width: 100%;
+  height: 300vh;
+  background: rgb(70,70,70);
+  display: grid;
+  grid-template-rows: 3fr 4fr 3fr 4fr 2fr;
+}
+#bod_title{
+  color: white;
+  font-family: 'Hurme', sans-serif;
+  font-size: 5em;
+}
+#body_desc{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Hurme', sans-serif;
+  font-size: 2em;
+  margin-top: 2%;
+  width: 50%;
+  text-align: center;
+}
+.bod1,.bod3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bod2{
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,.5) 100%), url('../images/springfield.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bod4{
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,.5) 100%), url('../images/poeple.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#op10_container2{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  visibility: hidden;
+  position: fixed;
+  z-index: 998;
+  top: 0.5in;
+  right: 0.5in;
+}
+#op10_icon2{
+  z-index: 998;
+  filter: brightness(100%);
+}
+@media only screen and (max-width: 1000px){
+  #op10_container2{
+    visibility: visible;
+  }
+}

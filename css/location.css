@@ -1,0 +1,241 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  background: rgba(70,70,70);
+}
+html{
+  font-size: 100%;
+}
+
+.page_space{
+  height: 15vh;
+  width: 100%;
+}
+#map{
+  height: 70vh;
+  max-height: 70vh;
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 5px white, 0px 0px 15px 10px rgba(0, 0, 0, 0.575);
+}
+.page_top{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left_container{
+  width: 70%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 70vh;
+  background: rgb(230,230,230);
+  margin-bottom: 100px;
+  /* border-right: 2px solid black; */
+}
+.right_screen{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left_screen{
+  height: 100%;
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+}
+#location_style{
+  height: 30vh;
+  border-top: 3px solid #bababa;
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+.location_left{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.location_right{
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr;
+}
+
+.our_locations{
+  padding: 50px 0px 50px 0px;
+  font-family: sans-serif;
+  font-size: 3em;
+  color: rgb(30,30,30);
+  display: fixed;
+  align-items: center;
+  justify-content: center;
+  background: rgb(230,230,230);
+  width: 70%;
+  text-align: center;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.548);
+}
+.distance{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 6%;
+}
+.location_title{
+  display: flex;
+  align-items: center;
+  font-family: 'Hurme', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  float: left;
+}
+#location_pin{
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-position: bottom;
+}
+.left_location1{
+  background: url('../images/pin1.png');
+}
+.left_location2{
+  background: url('../images/pin2.png');
+}
+.left_location3{
+  background: url('../images/pin3.png');
+}
+.left_location4{
+  background: url('../images/pin4.png');
+}
+
+.page_middle{
+  width: 100%;
+  height: 20vh;
+}
+
+.left_container::-webkit-scrollbar {
+    width: 10px;
+}
+.left_container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.left_container::-webkit-scrollbar-thumb {
+  background: rgb(60,60,60);
+  border-radius: 5px;
+}
+
+#shop_id{
+  font-family: sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+  margin-top: 3%;
+}
+#shop_num{
+  font-family: sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+}
+#shop_open{
+  font-family: sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+  font-weight: 700;
+}
+#location_btn{
+  background: transparent;
+  border: 2px solid rgb(255, 168, 0);
+  color: rgb(255, 168, 0);
+  height: 5vh;
+  margin-right: 5%;
+  font-size: 1.2em;
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+#location_btn:hover{
+  box-shadow: -4px 4px 7px 0px rgb(200,200,200);
+}
+.btn1{
+  width: 25%;
+}
+.btn2{
+  width: 20%;
+}
+@media only screen and (max-width: 1500px){
+  #location_style{
+    height: 50vh;
+  }
+  #location_btn{
+    width: 40%;
+  }
+  .left_container{
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .our_locations{
+    text-align: center;
+    font-size: 1.8em;
+    width: 90%;
+  }
+  #map{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px){
+  #op10_container2{
+    visibility: visible;
+  }
+  #location_style{
+    grid-template-columns: 1fr;
+    height: 60vh;
+  }
+  #location_style{
+    text-align: center;
+  }
+  #location_btn{
+    width: 40%;
+  }
+  .location_right{
+    grid-template-rows: 2fr 2fr 1fr;
+  }
+  .location_left{
+    grid-template-rows: 2fr 1fr;
+  }
+  .page_top{
+    flex-direction: column;
+  }
+  .right_screen{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left_container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .location_title{
+    margin-left: 5%;
+  }
+}
+#op10_container2{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  visibility: hidden;
+  position: fixed;
+  z-index: 998;
+  top: 0.5in;
+  right: 0.5in;
+}
+#op10_icon2{
+  z-index: 998;
+  filter: brightness(100%);
+}

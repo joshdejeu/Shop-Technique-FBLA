@@ -1,0 +1,303 @@
+p{
+  margin: 0;
+  padding: 0;
+}
+.page_top{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 55%, rgba(0,0,0,.7) 100%), url("../images/warehouse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;/*i changed this to vh instead of %, change back if there is error*/
+}
+.company_name_parent_container{
+  position: relative;
+  height: 80vh;
+}
+.company_name_child_container{
+  color: white;
+  min-height: 400px;
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 15fr 2fr 3fr 1fr 9fr;
+}
+.fake_space{
+  user-select: none;
+}
+.company_name{
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 5em;
+  letter-spacing: 5px;
+}
+.company_definition{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2em;
+  position: relative;
+}
+.company_noun{
+  font-family: 'Nunito Sans';
+  font-size: 2.5em;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.page_middle{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,.8) 100%), url("../images/warehouse2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mid_label{
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Hurme', sans-serif;
+  background: rgba(255, 171, 25,0.5);
+  backdrop-filter: blur(2px);
+  color: white;
+  width: 100%;
+  height: 15%;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,.5) ;
+}
+.mid_shop{
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.mid_shop>div{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr 3fr;
+}
+#shop_picture_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop_picture{
+  width: calc(25vw + 10vh);
+  height: calc(25vw + 10vh);
+  max-width: 15vw;
+  max-height: 15vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 15px 0px black;
+  border-radius: 5px;
+}
+#shop_price,#shop_desc{
+  text-align: center;
+  font-family: 'Hurme', sans-serif;
+}
+#shop_price{
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#shop_desc{
+  font-size: 1.5em;
+  color: rgba(240,240,240,0.8);
+  line-height: 4vh;
+  width: 100%;
+}
+.phone_picture{
+  background: url('../images/phone.jpg');
+  background-position: center;
+}
+.laptop_picture{
+  background: url('../images/laptop.jpg');
+  background-position: center;
+}
+.component_picture{
+  background: url('../images/components.jpg');
+  background-position: center;
+}
+.pc_picture{
+  background: url('../images/pc.jpg');
+  background-position: bottom;
+}
+.phones,.laptops,.gaming_pc,.components{
+  background: rgba(85,85,85,0.6);
+  height: 75%;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: grab;
+}
+#op10_container2{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  visibility: hidden;
+  position: fixed;
+  z-index: 998;
+  top: 0.5in;
+  right: 0.5in;
+}
+#op10_icon2{
+  z-index: 998;
+  filter: brightness(100%);
+}
+
+
+
+
+
+
+
+
+#cookieNotice{
+  width: 500px;
+  height: 300px;
+  z-index: 9999;
+  background-color: rgb(223, 223, 223);
+  border-radius: 20px;
+  position: fixed;
+  bottom: 0.2in;
+  left: 0.2in;
+  display: grid;
+  grid-template-rows: 2fr 6fr 2fr;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+  transition: all 0.4s ease;
+  transform: scale(0.0);
+}
+#cookieText_contcookieTextainer,#cookieText_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 41px;
+  padding-right: 41px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.1em;
+}
+#cookieText{
+  font-size: 1em;
+  margin-top: -10px;
+}
+#cookieLabel{
+  font-family: Midnight;
+  font-size: 70px;
+  margin-top: 5px;
+  position: absolute;
+}
+#cookieLabel_container{
+  font-size: 2em;
+  background-color: rgb(233, 150, 25);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+}
+#cookieBtn_container{
+  display: flex;
+  justify-content: center;
+}
+#cookieBtn{
+  width: 90px;
+  height: 40px;
+  font-size: 0.9em;
+  outline: none;
+  border: none;
+  cursor: grab;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.219);
+  transition: all 0.2s ease;
+}
+#cookieA{
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+#cookieBtn:hover{
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.404);
+}
+
+@media only screen and (max-width: 1600px){
+  .mid_shop{
+    height: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.7em;
+  }
+  .phones,.laptops,.gaming_pc,.components{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .mid_label{
+    height: 10%;
+  }
+  .page_middle{
+    width: 100%;
+    height: 150vh;
+  }
+  #shop_picture{
+    width: calc(20vw + 5vh);
+    height: calc(20vw);
+    max-width: 75vw;
+    max-height: 55vw;
+  }
+  .mid_shop>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 2fr 3fr;
+  }
+}
+@media only screen and (max-width: 1000px){
+  #op10_container2{
+    visibility: visible;
+  }
+  #cookieNotice{
+    width: 80vw;
+    height: 30vh;
+    font-size: 2em;
+    
+  }
+  #cookieBtn{
+    width: 30%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 750px){
+  .mid_shop{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .mid_label{
+    height: 5%;
+  }
+  .page_middle{
+    width: 100%;
+    height: 500vh;
+  }
+  #shop_picture{
+    width: calc(25vw + 20vh);
+    height: calc(25vw + 10vh);
+    max-width: 95vw;
+    max-height: 55vw;
+  }
+  #shop_price{
+    font-size: 3em;
+  }
+  #shop_desc{
+    font-size: 2em;
+    line-height: 50px;
+  }
+}

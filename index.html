@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/loadingscreen.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/slidebanner.css">
+    <link rel="stylesheet" href="css/bot.css">
+    <link rel="icon" href="images/logo.png">
+    <meta charset="utf-8">
+    <title>Technique | Homepage</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="loading">
+        <div class="loading_icon"></div>
+    </div>
+
+    <div class="content">
+      <div id="op10_container2">
+        <a id="cart_link" href="html/cart.html">
+          <div id="op10_icon2" class="cart_icon"></div>
+          <div id="cart_count2">0</div>
+        </a>
+      </div>
+      <div id="banner1" onclick="slideBanner()">
+        <div class="box">
+          <div class="boxin"></div>
+          <div class="boxin"></div>
+          <div class="boxin"></div>
+        </div>
+      </div>
+      <div id="banner2" class="slidebanner">
+        <div class=""></div>
+        <div class="banner_exit">
+          <div class="exit" onclick="slideExit()">&#10060;</div>
+        </div>
+        <div class="banner_options">
+          <div id="banop" class=""><a id="redir" href="html/shop.html">Shop</a></div>
+          <div class="banner_line">
+            <div id="slide_flag" class="usaflag2" onClick="translateEnglish(),eng()"></div>
+            <div id="slide_flag" class="mexflag2" onClick="translateSpanish(),span()"></div>
+          </div>
+          <div id="banop" class=""><a id="redir" href="html/location.html">Locations</a></div>
+          <div class="banner_line"></div>
+          <div id="banop" class=""><a id="redir" href="html/aboutus.html">About Us</a></div>
+          <div class="banner_line"></div>
+          <div id="banop" class=""><a id="redir" href="html/documentation.html">Documentation</a></div>
+          <div class="banner_line"></div>
+          <div class="div2">
+            <div id="rightline"><a id="redirr" href="index.html">Home Page</a></div>
+            <div><a id="redirr" onClick="mobileContact()">Contact Us</a></div>
+          </div>
+        </div>
+      </div>
+
+      <header id="header" class="header" onmouseover="headerHover()" onmouseout="headerOut()">
+        <div class="header_contianer">
+          <div class="filler"></div>
+          <div class="option"><a id="a" href="html/documentation.html"><p id="op7"  class="clickable_option">DOCUMENTATION</p></a></div>
+          <div class="option"><a id="a" href="html/shop.html"><p id="op1"  class="clickable_option">SHOP</p></a></div>
+          <div class="option"><a id="a" href="html/location.html"><p id="op2" class="clickable_option">LOCATIONS</p></a></div>
+          <div class="option"><a id="a" href="html/aboutus.html"><p id="op3"  class="clickable_option">ABOUT US</p></a></div>
+          <div id="op4" class="option"></div>
+          <div id="op5" class="op" >
+              <a href="index.html">
+                <p class="logo">technique</p>
+              </a>
+          </div>
+          <div id="op6" class="option"></div>
+
+          <div class="option"><p  id="op8" class="clickable_option" onClick="document.getElementById('contacts').scrollIntoView();">CONTACT US</p></div>
+
+          <div id="op9" class="option">
+            <div class="language">
+              <div id="usaflag" class="usaflag" onClick="translateEnglish(),eng()"></div>
+              <div class="line_parent">
+                <div id="line" class="line_child"></div>
+              </div>
+              <div id="mexflag" class="mexflag" onClick="translateSpanish(),span()"></div>
+            </div>
+          </div>
+          <div id="op10_container">
+            <a id="cart_link" href="html/cart.html">
+              <div id="op10_icon" class="cart_icon"></div>
+              <div id="cart_count">0</div>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="page_top">
+        <div class="company_name_parent_container">
+          <div class="company_name_child_container">
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+            <div class="word_container">
+              <p class="company_name">Tech•nique</p>
+            </div>
+
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+            <div class="noun_container">
+              <p class="company_noun">noun</p>
+            </div>
+
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+            <div class="definition_container">
+              <p id="definition" class="company_definition">A consumer electronics retailer located in Springfield, Missouri with products ranging from computer parts to new or refurbished mobile phones. Visit our shop today to see what items we have in stock.</p>
+            </div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+            <div class="fake_space"></div>
+
+          </div><!-- end of company name -->
+        </div><!-- end of company name container -->
+
+      </div><!-- end of page_top -->
+
+      <div class="page_middle">
+        <div id="banner" class="mid_label">Explore Our Inventory!</div>
+        <div class="mid_shop">
+
+          <div class="phones" onclick="goToPhone()">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="phone_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label1">Mobile Phones</div>
+            </div>
+
+            <div id="shop_desc">
+              <div id="shop_item1">Refurbished Phones</div>
+              <div id="shop_item2">New Phones</div>
+              <div class="">iPhone</div>
+              <div class="">Android</div>
+              <div id="shop_item3">Gaming Phones</div>
+            </div>
+          </div>
+
+          <div class="laptops" onclick="goToLaptop()">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="laptop_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label2">Laptops</div>
+            </div>
+
+            <div id="shop_desc">
+              <div class="">MacBook</div>
+              <div class="">Lenovo</div>
+              <div class="">Dell</div>
+              <div class="">Acer</div>
+              <div class="">MSI</div>
+            </div>
+          </div>
+
+          <div class="gaming_pc" onclick="goToPC()">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="pc_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label3">Gaming PCs</div>
+            </div>
+
+            <div id="shop_desc">
+              <div class="">Corsair</div>
+              <div class="">Omen</div>
+              <div class="">Predator</div>
+              <div class="">Alienware</div>
+              <div class="">Intel</div>
+            </div>
+          </div>
+
+          <div class="components" onclick="goToComponents()">
+            <div id="shop_picture_container">
+              <div id="shop_picture" class="component_picture"></div>
+            </div>
+
+            <div id="shop_price">
+              <div id="shop_label4">Computer Components</div>
+            </div>
+
+            <div id="shop_desc">
+              <div id="shop_item4">Controllers</div>
+              <div id="shop_item5">Keyboards</div>
+              <div id="shop_item6">Monitors</div>
+              <div id="shop_item7">Storage</div>
+              <div id="shop_item8">Memory</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="javascript/goshop.js">
+
+      </script>
+
+      <div id="contacts" class="contact_container">
+        <div class=""></div>
+
+        <div class="contact_grid_item1">
+          <div class="item1_grid">
+            <div class="item1"><p id="LT">Have a question?</p></div>
+            <div class="item1"><p id="LT2">Fill out this quick email submission or go <a id="contactDirection" onClick="document.getElementById('footerOption9').scrollIntoView();">here</a > for more contact information.</p></div>
+            <div class="item2">
+              <label id="contact_label1" class="contact_labels" for="name">Name</label>
+            </div>
+            <input class="contact_inputs" id="name_input" name="name" placeholder="Your name" type="text">
+            <div class="item3">
+              <label id="contact_label2" class="contact_labels" for="email">Your Email*</label>
+              <p id="email_required" class="required"></p>
+            </div>
+            <input id="email" class="contact_inputs" name="email" placeholder="Your email address" type="text" required>
+            <div class="item4">
+              <label id="contact_label3" class="contact_labels" for="message">Your Message*</label>
+              <p id="message_required" class="required"></p>
+
+            </div>
+            <textarea id="contact_textarea" name="message" placeholder="Enter your message" required></textarea>
+            <div class="item5">
+              <button id="contact_button" type="button" name="button" onclick="contactSubmit()">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact_grid_item2">
+          <img id="contact_image" src="images/employee.jpg" alt="">
+        </div>
+      </div><!-- end of contacts -->
+      
+      <div id="bot_mobileView"></div>
+      <div id="bot_container">
+        <div id="bot_header">
+            <div id="bot_header_profile">
+                <div id="bot_status"></div>
+            </div>
+            <div id="bot_header_name">
+                <div id="bot_name">TechBot</div>
+                <div id="bot_online">Online</div>
+            </div>
+            <div id="bot_exit">
+                <div id="bot_exit_btn">✕</div>
+            </div>
+        </div>
+        <div id="bot_body">
+            <div id="message_bot">
+                <div id="bot_reply_profile"></div>
+                <div id="bot_reply_message">Type <i>'help'</i> for more options.</div>
+            </div>
+            <div id="message_bot">
+                <div id="bot_reply_profile"></div>
+                <div id="bot_reply_message">What can I help you with today?</div>
+            </div>
+            <div id="message_tip">
+                <h4 id="h4_tip">Common Questions</h4>
+                <div class="tip">Where are you located?</div>
+                <div class="tip">More about Technique?</div>
+                <div class="tip">Where is your shop?</div>
+            </div>
+        </div>
+        <div id="bot_input">
+            <input type="text" id="bot_textinput" placeholder="Type your message here..." value="">
+            <div id="bot_send">
+                <div id="send_icon"></div>
+            </div>
+        </div>
+      </div> <!-- End of Bot -->
+      <script src="javascript/bot.js"></script>
+
+      <div id="cookieNotice">
+        <div id="cookieLabel_container">
+          <p id="cookieLabel">technique</p>
+        </div>
+        <div id="cookieText_container">
+          <p id="cookieText">This website uses <a id="cookieA" target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookies</a> to inhance user experience. To learn more click on the underlined word above to get more information.</p>
+        </div>
+        <div id="cookieBtn_container">
+          <input id="cookieBtn" type="button" value="Alright">
+        </div>
+      </div>
+
+      <footer>
+        <div id="social_media" class="grid_span1">
+          <div id="footerText1" class="social_media_text">Stay connected with us on social media!</div>
+          <a id="social_icons" class="facebook" href="https://www.facebook.com/Technique-Inc-104527218790916" target="_blank"></a>
+
+          <a id="social_icons" class="instagram" href="https://www.instagram.com/technique_inc/" target="_blank"></a>
+
+          <a id="social_icons" class="twitter" href="https://twitter.com/IncTechnique" target="_blank"></a>
+
+          <a id="social_icons" class="youtube" href="https://www.youtube.com/channel/UCJYK2iQPfQrv5PLX34L6zlQ" target="_blank"></a>
+
+        </div>
+        <div class="filler"></div>
+        <div id="footer_inner_grid" class="footer_section1">
+          <div class="filler"></div>
+          <div id="footerText2" class="footer_section_name">EXPLORE</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a id="footerOption1" href="html/location.html">Our Locations</a>
+            <a id="footerOption2" href="html/aboutus.html">About Us</a>
+            <a id="footerOption3" href="html/shop.html">Our Shop</a>
+          </div>
+        </div>
+        <div id="footer_inner_grid" class="footer_section2">
+          <div class="filler"></div>
+          <div id="footerText3" class="footer_section_name">LINKS</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div class="footer_section_content">
+            <a id="footerOption4" href="html/documentation.html">Documentation</a>
+            <a id="footerOption5" href="index.html">Home Page</a>
+            <a id="footerOption6" href="html/shop.html">Inventory</a>
+          </div>
+        </div>
+        <div id="footer_inner_grid" class="footer_section3">
+          <div class="filler"></div>
+          <div id="footerText4" class="footer_section_name">CONTACT</div>
+          <div class="filler"></div>
+          <div class="footer_line"></div>
+          <div class="filler"></div>
+          <div id="footer_contact_grid" class="footer_section_content">
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="images/pinicon.png" alt="">
+            </div>
+            <a id="footerOption7" href="html/location.html">Springfield, MO 65807 US</a>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="images/mailicon.png" alt="">
+            </div>
+            <a id="footerOption8" onclick="sendEmail()" href="#">techniqueincorporated@gmail.com</a>
+            <script>
+            function sendEmail()
+            {
+              window.location = "mailto:techniqueincorporated@gmail.com";
+            }
+            </script>
+            <div id="footer_contact_icon_container">
+              <img id="footer_contact_icons" src="images/phoneicon.png" alt="">
+            </div>
+            <a id="footerOption9" href="#">+1-800-123-4567</a>
+          </div>
+        </div>
+        <div class="filler"></div>
+        <div class="grid_span2">&copy 2022 Copyright Josh Dejeu</div>
+      </footer>
+    </div><!-- end of content -->
+
+    <script src="javascript/homecookie.js"></script>
+    <script src="javascript/translateHome.js"></script>
+    <script src="javascript/headerchange.js"></script>
+    <script src="javascript/slidebanner.js"></script>
+    <script src="javascript/mobileContact.js"></script>
+    <script src="javascript/contactsubmit.js"></script>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/cartUpdate2.js"></script>
+    <script src="javascript/languageSelected.js"></script>
+    <script src="javascript/cookieaccept.js"></script>
+  </body>
+</html>

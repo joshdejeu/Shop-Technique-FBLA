@@ -1,0 +1,130 @@
+.box{
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: grab;
+  width: 10vw;
+  height: 8vw;
+}
+.box>div{
+  width: 100%;
+  height: 15%;
+  background: white;
+  border-radius: 20px;
+  /* box-shadow: 0px 0px 1px 2px rgb(0, 0, 0); */
+  border: 2px solid black;
+}
+.banner_exit{
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+.exit{
+  width: 95%;
+  height: 100%;
+  filter: brightness(0%);
+  font-size: 3em;
+  text-align: right;
+  cursor: grab;
+}
+.exit:hover{
+  filter: brightness(70%);
+}
+.exit:active{
+  filter: brightness(100%);
+}
+#banner1{
+  visibility: hidden;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  margin-top: 0.3in;
+  margin-left: 0.5in;
+}
+#banner2{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background: white;
+  display: grid;
+  grid-template-rows: 1fr 5fr 90fr;
+  visibility: hidden;
+}
+.banner_options{
+  height: 90vh;
+  display: grid;
+  grid-template-rows: repeat(9,1fr);
+}
+#banop{
+  width: 100%;
+  text-align: center;
+  font-family: 'Hurme', sans-serif;
+  font-size: 4.5em;
+  cursor: grab;
+}
+.banner_line{
+  width: 100vw;
+  height: 3px;
+  background: rgba(0,0,0,0.8);
+}
+.div2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Hurme', sans-serif;
+  cursor: grab;
+}
+#rightline{
+  border-right: 3px solid rgba(0,0,0,0.8);
+}
+#slide_flag{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 15vw;
+  height: calc(15vw * 0.6);
+  position: absolute;
+  cursor: grab;
+}
+.usaflag2{
+  background: url('../images/usaflag.jpg');
+  top: 0;
+  margin-top: 2%;
+  margin-left: 20%;
+  opacity: 100%;
+}
+.mexflag2{
+  background: url('../images/mexflag.png');
+  top: 0;
+  right: 0;
+  margin-right: 20%;
+  margin-top: 2%;
+  opacity: 30%;
+}
+@keyframes slideIn{
+  0%{transform: translateX(-100%);}
+  100%{transform: translateX(0%);}
+}
+@keyframes slideOut{
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(-100%);}
+}
+@media only screen and (max-width: 1000px){
+  #banner1{
+    visibility: visible;
+  }
+  #banner2{
+    position: fixed;
+    z-index: 999;
+    display: grid;
+    grid-template-rows: 1fr 5fr 90fr;
+    visibility: hidden;
+  }
+}
+
