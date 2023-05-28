@@ -8,4 +8,4 @@ State - 3rd Place <br>
 National - 1st Place
 
 For more placing results see the link below.
-<a href="[https://shop-technique-fbla.pages.dev/](https://fbla-nlc.org/wp-content/uploads/2022/07/FBLA-Complete-Winner-List.pdf#page=74)">View NLC 2022 - FBLA Results</a>
+<a href="https://fbla-nlc.org/wp-content/uploads/2022/07/FBLA-Complete-Winner-List.pdf#page=74">View NLC 2022 - FBLA Results</a>
