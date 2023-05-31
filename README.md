@@ -1,7 +1,7 @@
 <a href="https://shop-technique-fbla.pages.dev/">View Live Site</a>
 
 # Shop-Technique-FBLA
-I created this website for a FBLA (Future Business Leader of America) competition in Website Design. The topic was creating a website for a local business (fincation or real) with a minimum of 4 pages, ease of navigation and basic web elements.
+I created this website for a FBLA (Future Business Leaders of America) competition in Website Design. The topic was creating a website for a local business (fictional or real) with a minimum of 4 pages, ease of navigation and basic web elements.
 
 District - 1st Place <br>
 State - 3rd Place <br>
