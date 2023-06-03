@@ -1,6 +1,10 @@
+<div align="center">
+  
 [![Button Shield]](https://shop-technique-fbla.pages.dev/)
 
 [Button Shield]: https://img.shields.io/badge/View_Live_Site-37a779?style=for-the-badge
+</div>
+
 [![Screenshot](https://i.postimg.cc/3xWtMRKw/image.png)](https://shop-technique-fbla.pages.dev/)
 
 
